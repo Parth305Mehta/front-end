@@ -75,6 +75,59 @@
             </div>
         </div>
     </div>
+
+    <div id='Reservation' class='modal fade' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+            <div class='modal-content'>
+                <div class=' align-self-center col-sm'>
+                    <div class='modal-header'>
+                        <h3 class=' test-white bg-white '>Reserve a Table</h3>
+                        <button type='button' class='close' data-dismiss='modal'>
+                            &times;
+                        </button>
+                    </div>
+                    <div class='modal-body'>
+                        <form>
+                            <div class='form-row'>
+                                <div class='col-12 col-sm-2'>
+                                    <h6><strong>Number of guests</strong></h6>
+                                </div>
+                                <div class='radio radio-inline col-sm-auto'>
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>1
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>2
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>3
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>4
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>5
+                                    <input type="radio" name="optradio" checked class='mr-2 ml-2'>6
+                                </div>
+                            </div>
+                            <div class='form-row mt-4'>
+                                <div class='col-12 col-sm-2'>
+                                    <h6><strong>Section</strong></h6>
+                                </div>
+                                <button type='button' class='btn btn-success col-sm-auto align-items-center'>Non-Smoking</button>
+                                <button type='button' class='btn btn-danger col-sm-auto align-items-center'>Smoking</button>
+                            </div>
+                            <div class='form-row mt-4'>
+                                <div class='col-12 col-sm-2'>
+                                    <h6><strong>Date and Time</strong></h6>
+                                </div>
+                                <input type='text' placeholder='Date' name='Date' class='col-sm-3 form-control mr-3'>
+                                <input type='text' placeholder='Time' name='Time' class='col-sm-3  form-control'>
+                            </div>
+                            <div class='form-row align-items-center mt-4'>
+                                <div class='col-sm-2'>
+                                </div>
+                                <button class='btn btn-dark text-white col-12 col-sm-3 align-items-center mr-3' type='button'>Cancel</button>
+                                <button class='btn btn-primary text-white col-12 col-sm-3 align-items-center' type='button'>Reserve</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class='container'>
             <div class='row row-header'>
@@ -86,7 +139,7 @@
                         <img src='img/logo.png' class='img-fluid'>
                     </div>
                     <div class='col-12 col-sm align-self-center '>
-                        <a href='#Reservation'><button class='btn btn-warning col-12 col-sm ' data-toggle='tooltip' data-html='true' title='Or Call us at <br><strong>+852 12345678</strong>' data-placement='bottom' type='submit'>Reserve Table</button></a>
+                        <a data-target='#Reservation' data-toggle='modal'><button class='btn btn-warning col-12 col-sm '  type='submit'>Reserve Table</button></a>
                     </div>
             </div>
         </div>
@@ -191,33 +244,8 @@
             </div>
         </div>
 
-        <div class='row row-content align-self-center col-sm-8' id='Reservation'>
-            <div class='col-sm'>
-                <div class='card' >
-                   <h3 class='card-header bg-warning test-white'>Reserve a Table</h3> 
-                    <div class='card-body'>
-                        <dl class='row mr-0'>
-                            <dt class='col-12 col-sm-2'>Number of Guests</dt>
-                            <dd class=' radio radio-inline col-sm-10 mr-0'>
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>1
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>2
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>3
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>4
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>5
-                                <input type="radio" name="optradio" checked class='mr-2 ml-2'>6
-                            </dd>
-                            <dl class='row align-self-center mr-0 mt-3'>
-                                <dt class=' col-12  col-sm-3 mr-0 '>Date and Time</dt>
-                                <dd class='col-sm-9 col-12 '>
-                                    <input type='text'  placeholder='Date ' class='ml-0'>
-                                    <input type='text'  placeholder='Time' >
-                                </dd>
-                            </dl>
-                        </dl>                       
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+                
     </div>
 
     <footer class="footer">
